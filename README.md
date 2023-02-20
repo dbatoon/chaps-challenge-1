@@ -1,3 +1,7 @@
+<a href='https://docshoster.org/p/jjeeff248/chaps-challenge/latest/introduction.html'>
+  <img src='https://docshoster.org/pstatic/jjeeff248/chaps-challenge/latest/badge.svg'/>
+</a>
+
 # Chaps-challenge
 
 1. [Setup and Run](https://gitlab.ecs.vuw.ac.nz/course-work/swen225/2022/project1/t3/chaps-challenge#setting-up-and-running-the-game)
