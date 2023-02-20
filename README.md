@@ -1,4 +1,4 @@
-<a href='https://docshoster.org/p/jjeeff248/chaps-challenge/latest/introduction.html'>
+<a href='https://docshoster.org/p/jjeeff248/chaps-challenge/latest/introduction.html' target='_blank'>
   <img src='https://docshoster.org/pstatic/jjeeff248/chaps-challenge/latest/badge.svg'/>
 </a>
 
