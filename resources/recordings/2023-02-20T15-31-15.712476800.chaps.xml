@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game level="2">
+  <state id="0" time="0"/>
+  <state id="1" time="80">
+    <action entityID="0" type="None" x="0" y="-1" prevDir="Left" currDir="Up" color="None"/>
+  </state>
+  <state id="2" time="160">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Up" currDir="Right" color="None"/>
+  </state>
+  <state id="3" time="220">
+    <action entityID="0" type="None" x="0" y="1" prevDir="Right" currDir="Down" color="None"/>
+  </state>
+  <state id="4" time="280">
+    <action entityID="0" type="None" x="0" y="1" prevDir="Down" currDir="Down" color="None"/>
+  </state>
+  <state id="5" time="320">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Down" currDir="Right" color="None"/>
+  </state>
+  <state id="6" time="380">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="7" time="400">
+    <action entityID="1" type="Pinged" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+    <action entityID="2" type="Pinged" x="-1" y="0" prevDir="Left" currDir="Left" color="None"/>
+  </state>
+  <state id="8" time="440">
+    <action entityID="0" type="None" x="2" y="-1" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="9" time="500">
+    <action entityID="0" type="PickupKey" x="1" y="0" prevDir="Right" currDir="Right" color="Green"/>
+  </state>
+  <state id="10" time="540">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="11" time="600">
+    <action entityID="0" type="None" x="0" y="-1" prevDir="Right" currDir="Up" color="None"/>
+  </state>
+  <state id="12" time="640">
+    <action entityID="0" type="None" x="-1" y="0" prevDir="Up" currDir="Left" color="None"/>
+  </state>
+  <state id="13" time="680">
+    <action entityID="0" type="None" x="-3" y="0" prevDir="Left" currDir="Left" color="None"/>
+  </state>
+  <state id="14" time="740">
+    <action entityID="0" type="None" x="-1" y="0" prevDir="Left" currDir="Left" color="None"/>
+  </state>
+  <state id="15" time="800">
+    <action entityID="1" type="Pinged" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+    <action entityID="2" type="Pinged" x="-1" y="0" prevDir="Left" currDir="Left" color="None"/>
+  </state>
+  <state id="16" time="820">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Up" currDir="Right" color="None"/>
+  </state>
+  <state id="17" time="880">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+</game>

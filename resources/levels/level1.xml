@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maze level="1">
+    <mapInfo>
+        <width>17</width>
+        <height>16</height>
+        <treasures>11</treasures>
+        <nextLevel>2</nextLevel>
+    </mapInfo>
+    <player x="8" y="7" direction="Down"/>
+    <tiles>
+        <tile ID="info" x="8" y="6">
+            <text>Level1Info</text>
+        </tile>
+        <tile ID="door" x="6" y="4">
+            <color>Green</color>
+        </tile>
+        <tile ID="door" x="10" y="4">
+            <color>Green</color>
+        </tile>
+        <tile ID="door" x="5" y="5">
+            <color>Blue</color>
+        </tile>
+        <tile ID="door" x="5" y="9">
+            <color>Red</color>
+        </tile>
+        <tile ID="door" x="11" y="5">
+            <color>Red</color>
+        </tile>
+        <tile ID="door" x="11" y="9">
+            <color>Blue</color>
+        </tile>
+        <tile ID="door" x="7" y="10">
+            <color>Yellow</color>
+        </tile>
+        <tile ID="door" x="9" y="10">
+            <color>Yellow</color>
+        </tile>
+
+        <tile ID="key" x="6" y="6">
+            <color>Blue</color>
+        </tile>
+        <tile ID="key" x="6" y="8">
+            <color>Blue</color>
+        </tile>
+
+        <tile ID="key" x="10" y="6">
+            <color>Red</color>
+        </tile>
+        <tile ID="key" x="10" y="8">
+            <color>Red</color>
+        </tile>
+
+        <tile ID="key" x="3" y="5">
+            <color>Yellow</color>
+        </tile>
+        <tile ID="key" x="13" y="5">
+            <color>Yellow</color>
+        </tile>
+
+        <tile ID="key" x="7" y="13">
+            <color>Green</color>
+        </tile>
+        <tile ID="key" x="9" y="13">
+            <color>Green</color>
+        </tile>
+
+        <tile ID="treasure" x="5" y="3"/>
+        <tile ID="treasure" x="11" y="3"/>
+        <tile ID="treasure" x="3" y="6"/>
+        <tile ID="treasure" x="13" y="6"/>
+        <tile ID="treasure" x="6" y="7"/>
+        <tile ID="treasure" x="10" y="7"/>
+        <tile ID="treasure" x="3" y="8"/>
+        <tile ID="treasure" x="13" y="8"/>
+        <tile ID="treasure" x="8" y="9"/>
+        <tile ID="treasure" x="7" y="12"/>
+        <tile ID="treasure" x="9" y="12"/>
+
+        <tile ID="exit" x="8" y="3"/>
+        <tile ID="exit-gate" x="8" y="4"/>
+
+        <tile ID="wall" x="3" y="1"/>
+        <tile ID="wall" x="4" y="1"/>
+        <tile ID="wall" x="5" y="1"/>
+        <tile ID="wall" x="6" y="1"/>
+        <tile ID="wall" x="7" y="1"/>
+
+        <tile ID="wall" x="9" y="1"/>
+        <tile ID="wall" x="10" y="1"/>
+        <tile ID="wall" x="11" y="1"/>
+        <tile ID="wall" x="12" y="1"/>
+        <tile ID="wall" x="13" y="1"/>
+
+
+        <tile ID="wall" x="3" y="2"/>
+        <tile ID="wall" x="7" y="2"/>
+        <tile ID="wall" x="8" y="2"/>
+        <tile ID="wall" x="9" y="2"/>
+        <tile ID="wall" x="13" y="2"/>
+
+        <tile ID="wall" x="3" y="3"/>
+        <tile ID="wall" x="7" y="3"/>
+        <tile ID="wall" x="9" y="3"/>
+        <tile ID="wall" x="13" y="3"/>
+
+        <tile ID="wall" x="1" y="4"/>
+        <tile ID="wall" x="2" y="4"/>
+        <tile ID="wall" x="3" y="4"/>
+        <tile ID="wall" x="4" y="4"/>
+        <tile ID="wall" x="5" y="4"/>
+
+        <tile ID="wall" x="7" y="4"/>
+
+        <tile ID="wall" x="9" y="4"/>
+
+        <tile ID="wall" x="11" y="4"/>
+        <tile ID="wall" x="12" y="4"/>
+        <tile ID="wall" x="13" y="4"/>
+        <tile ID="wall" x="14" y="4"/>
+        <tile ID="wall" x="15" y="4"/>
+
+        <tile ID="wall" x="1" y="5"/>
+        <tile ID="wall" x="15" y="5"/>
+
+        <tile ID="wall" x="1" y="6"/>
+        <tile ID="wall" x="5" y="6"/>
+
+        <tile ID="wall" x="11" y="6"/>
+        <tile ID="wall" x="15" y="6"/>
+
+        <tile ID="wall" x="1" y="7"/>
+        <tile ID="wall" x="2" y="7"/>
+        <tile ID="wall" x="3" y="7"/>
+        <tile ID="wall" x="4" y="7"/>
+        <tile ID="wall" x="5" y="7"/>
+
+        <tile ID="wall" x="11" y="7"/>
+        <tile ID="wall" x="12" y="7"/>
+        <tile ID="wall" x="13" y="7"/>
+        <tile ID="wall" x="14" y="7"/>
+        <tile ID="wall" x="15" y="7"/>
+
+        <tile ID="wall" x="1" y="8"/>
+        <tile ID="wall" x="5" y="8"/>
+
+        <tile ID="wall" x="11" y="8"/>
+        <tile ID="wall" x="15" y="8"/>
+
+        <tile ID="wall" x="1" y="9"/>
+        <tile ID="wall" x="15" y="9"/>
+
+        <tile ID="wall" x="1" y="10"/>
+        <tile ID="wall" x="2" y="10"/>
+        <tile ID="wall" x="3" y="10"/>
+        <tile ID="wall" x="4" y="10"/>
+        <tile ID="wall" x="5" y="10"/>
+        <tile ID="wall" x="6" y="10"/>
+
+        <tile ID="wall" x="8" y="10"/>
+
+        <tile ID="wall" x="10" y="10"/>
+        <tile ID="wall" x="11" y="10"/>
+        <tile ID="wall" x="12" y="10"/>
+        <tile ID="wall" x="13" y="10"/>
+        <tile ID="wall" x="14" y="10"/>
+        <tile ID="wall" x="15" y="10"/>
+
+        <tile ID="wall" x="5"  y="11"/>
+        <tile ID="wall" x="8"  y="11"/>
+        <tile ID="wall" x="11" y="11"/>
+
+        <tile ID="wall" x="5"  y="12"/>
+        <tile ID="wall" x="8"  y="12"/>
+        <tile ID="wall" x="11" y="12"/>
+
+        <tile ID="wall" x="5"  y="13"/>
+        <tile ID="wall" x="8"  y="13"/>
+        <tile ID="wall" x="11" y="13"/>
+
+        <tile ID="wall" x="5" y="14"/>
+        <tile ID="wall" x="6" y="14"/>
+        <tile ID="wall" x="7" y="14"/>
+        <tile ID="wall" x="8" y="14"/>
+        <tile ID="wall" x="9" y="14"/>
+        <tile ID="wall" x="10" y="14"/>
+        <tile ID="wall" x="11" y="14"/>
+    </tiles>
+</maze>

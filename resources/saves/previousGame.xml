@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<maze level="2">
+  <mapInfo>
+    <width>16</width>
+    <height>15</height>
+    <treasures>2</treasures>
+    <nextLevel>-1</nextLevel>
+  </mapInfo>
+  <saveInfo>
+    <time>46</time>
+    <keysCollected>0</keysCollected>
+  </saveInfo>
+  <player x="13" y="7" direction="Left"/>
+  <entities>
+    <entity ID="GummyGuard" x="13" y="6" direction="Left"/>
+    <entity ID="GummyGuard" x="11" y="8" direction="Right"/>
+  </entities>
+  <tiles>
+    <tile ID="wall" x="0" y="5"/>
+    <tile ID="wall" x="0" y="6"/>
+    <tile ID="wall" x="0" y="7"/>
+    <tile ID="wall" x="0" y="8"/>
+    <tile ID="wall" x="0" y="9"/>
+    <tile ID="wall" x="1" y="2"/>
+    <tile ID="wall" x="1" y="3"/>
+    <tile ID="wall" x="1" y="4"/>
+    <tile ID="wall" x="1" y="5"/>
+    <tile ID="wall" x="1" y="9"/>
+    <tile ID="wall" x="1" y="10"/>
+    <tile ID="wall" x="1" y="11"/>
+    <tile ID="wall" x="1" y="12"/>
+    <tile ID="wall" x="2" y="2"/>
+    <tile ID="wall" x="2" y="12"/>
+    <tile ID="wall" x="3" y="2"/>
+    <tile ID="wall" x="3" y="3"/>
+    <tile ID="wall" x="3" y="4"/>
+    <tile ID="wall" x="3" y="5"/>
+    <tile ID="info" x="3" y="7">
+      <text>Level2Info</text>
+    </tile>
+    <tile ID="wall" x="3" y="9"/>
+    <tile ID="wall" x="3" y="10"/>
+    <tile ID="wall" x="3" y="11"/>
+    <tile ID="wall" x="3" y="12"/>
+    <tile ID="wall" x="4" y="5"/>
+    <tile ID="bounce-pad" x="4" y="7">
+      <direction>Right</direction>
+    </tile>
+    <tile ID="wall" x="4" y="9"/>
+    <tile ID="wall" x="5" y="0"/>
+    <tile ID="wall" x="5" y="1"/>
+    <tile ID="wall" x="5" y="2"/>
+    <tile ID="wall" x="5" y="3"/>
+    <tile ID="wall" x="5" y="4"/>
+    <tile ID="wall" x="5" y="5"/>
+    <tile ID="death" x="5" y="6"/>
+    <tile ID="death" x="5" y="7"/>
+    <tile ID="death" x="5" y="8"/>
+    <tile ID="wall" x="5" y="9"/>
+    <tile ID="wall" x="5" y="10"/>
+    <tile ID="wall" x="5" y="11"/>
+    <tile ID="wall" x="5" y="12"/>
+    <tile ID="wall" x="5" y="13"/>
+    <tile ID="wall" x="5" y="14"/>
+    <tile ID="wall" x="6" y="0"/>
+    <tile ID="wall" x="6" y="4"/>
+    <tile ID="bounce-pad" x="6" y="6">
+      <direction>Left</direction>
+    </tile>
+    <tile ID="bounce-pad" x="6" y="8">
+      <direction>Left</direction>
+    </tile>
+    <tile ID="wall" x="6" y="10"/>
+    <tile ID="wall" x="6" y="14"/>
+    <tile ID="wall" x="7" y="0"/>
+    <tile ID="exit" x="7" y="1"/>
+    <tile ID="exit-gate" x="7" y="4"/>
+    <tile ID="wall" x="7" y="14"/>
+    <tile ID="wall" x="8" y="0"/>
+    <tile ID="wall" x="8" y="4"/>
+    <tile ID="wall" x="8" y="10"/>
+    <tile ID="wall" x="8" y="14"/>
+    <tile ID="wall" x="9" y="0"/>
+    <tile ID="wall" x="9" y="1"/>
+    <tile ID="wall" x="9" y="2"/>
+    <tile ID="wall" x="9" y="3"/>
+    <tile ID="wall" x="9" y="4"/>
+    <tile ID="wall" x="9" y="5"/>
+    <tile ID="wall" x="9" y="6"/>
+    <tile ID="wall" x="9" y="8"/>
+    <tile ID="wall" x="9" y="9"/>
+    <tile ID="wall" x="9" y="10"/>
+    <tile ID="wall" x="9" y="11"/>
+    <tile ID="wall" x="9" y="12"/>
+    <tile ID="wall" x="9" y="13"/>
+    <tile ID="wall" x="9" y="14"/>
+    <tile ID="wall" x="10" y="3"/>
+    <tile ID="wall" x="10" y="11"/>
+    <tile ID="wall" x="11" y="3"/>
+    <tile ID="wall" x="11" y="11"/>
+    <tile ID="wall" x="12" y="3"/>
+    <tile ID="treasure" x="12" y="4"/>
+    <tile ID="treasure" x="12" y="10"/>
+    <tile ID="wall" x="12" y="11"/>
+    <tile ID="wall" x="13" y="3"/>
+    <tile ID="wall" x="13" y="11"/>
+    <tile ID="wall" x="14" y="3"/>
+    <tile ID="wall" x="14" y="11"/>
+    <tile ID="wall" x="15" y="3"/>
+    <tile ID="wall" x="15" y="4"/>
+    <tile ID="wall" x="15" y="5"/>
+    <tile ID="wall" x="15" y="6"/>
+    <tile ID="wall" x="15" y="7"/>
+    <tile ID="wall" x="15" y="8"/>
+    <tile ID="wall" x="15" y="9"/>
+    <tile ID="wall" x="15" y="10"/>
+    <tile ID="wall" x="15" y="11"/>
+  </tiles>
+</maze>

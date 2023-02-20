@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<game level="2">
+  <state id="0" time="0"/>
+  <state id="1" time="20">
+    <action entityID="0" type="None" x="0" y="-1" prevDir="Right" currDir="Up" color="None"/>
+  </state>
+  <state id="2" time="80">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Up" currDir="Right" color="None"/>
+  </state>
+  <state id="3" time="120">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="4" time="160">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="5" time="220">
+    <action entityID="0" type="None" x="2" y="1" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="6" time="260">
+    <action entityID="0" type="None" x="-2" y="1" prevDir="Right" currDir="Left" color="None"/>
+  </state>
+  <state id="7" time="300">
+    <action entityID="0" type="None" x="-1" y="0" prevDir="Left" currDir="Left" color="None"/>
+  </state>
+  <state id="8" time="360">
+    <action entityID="0" type="None" x="0" y="-1" prevDir="Left" currDir="Up" color="None"/>
+  </state>
+  <state id="9" time="400">
+    <action entityID="1" type="Pinged" x="1" y="0" prevDir="Right" currDir="Right" color="None"/>
+    <action entityID="2" type="Pinged" x="-1" y="0" prevDir="Left" currDir="Left" color="None"/>
+    <action entityID="0" type="None" x="0" y="-1" prevDir="Up" currDir="Up" color="None"/>
+  </state>
+  <state id="10" time="460">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Up" currDir="Right" color="None"/>
+  </state>
+  <state id="11" time="500">
+    <action entityID="0" type="None" x="2" y="1" prevDir="Right" currDir="Right" color="None"/>
+  </state>
+  <state id="12" time="560">
+    <action entityID="0" type="None" x="-2" y="1" prevDir="Right" currDir="Left" color="None"/>
+  </state>
+  <state id="13" time="660">
+    <action entityID="0" type="None" x="1" y="0" prevDir="Down" currDir="Right" color="None"/>
+  </state>
+</game>

@@ -1,0 +1,457 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "nz.ac.vuw.ecs.swen225.gp22.app; nz.ac.vuw.ecs.swen225.gp22.domain;nz.ac.vuw.ecs.swen225.gp22.persistency;nz.ac.vuw.ecs.swen225.gp22.recorder;nz.ac.vuw.ecs.swen225.gp22.renederer;nz.ac.vuw.ecs.swen225.gp22.util;",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "nz.ac.vuw.ecs.swen225.gp22.app.Base",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_3106 { 
+   	label=ac
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1425023540 { 
+   	label=vuw
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Action1918088740[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Action</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   actionType: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   color: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currDir: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   entityID: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   prevDir: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   x: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   y: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ actionType(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ color(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ currDir(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ entityID(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ prevDir(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toxml(): Element</TD></TR>
+<TR><TD ALIGN="LEFT" >+ x(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ y(): int</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Base876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Base</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   components: List&lt;JComponent&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentMenuBar: GameMenuBar [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentPanel: PhasePanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentPopUp: GameDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   delay: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gameOverDialog: GameDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gameTimer: Timer [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gameWinDialog: GameDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   pauseDialog: GameDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   recorder: Recorder [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   saveDialog: GameDialog [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   timeMS: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ apply(actions: List&lt;Action&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ changeKeyListener(keyListener: KeyListener)</TD></TR>
+<TR><TD ALIGN="LEFT" >- closePopUp()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ exitGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getAction(action: Action): Action</TD></TR>
+<TR><TD ALIGN="LEFT" >- getActionType(actionType: String): ActionType</TD></TR>
+<TR><TD ALIGN="LEFT" >- getColor(color: String): Color</TD></TR>
+<TR><TD ALIGN="LEFT" >- getDirection(dir: String): Direction</TD></TR>
+<TR><TD ALIGN="LEFT" >+ loadGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ loadLevel()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ menuScreen()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ movePlayer(dir: Direction)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ newGame(lvl: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ nextLevel(lvl: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ pause()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ playerDied()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ playerWon()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ replayPhase()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resetFocus()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ runClosePhase()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ saveExit()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ saveGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ startGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >- transformActions(actions: List&lt;Action&gt;): List&lt;Action&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ unPause()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ undo(actions: List&lt;Action&gt;)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Controller876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Controller</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   b: Base [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- constantCommand()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GameDialog876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GameDialog</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   base: Base [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   height: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   info: JLabel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   timeMS: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   timer: Timer [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   width: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   xOffset: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   yOffset: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- exitButton(): GameButton</TD></TR>
+<TR><TD ALIGN="LEFT" >- loadButton(): GameButton</TD></TR>
+<TR><TD ALIGN="LEFT" >+ makeBounds()</TD></TR>
+<TR><TD ALIGN="LEFT" >- newOneButton(): GameButton</TD></TR>
+<TR><TD ALIGN="LEFT" >- newTwoButton(): GameButton</TD></TR>
+<TR><TD ALIGN="LEFT" >- playButton(): GameButton</TD></TR>
+<TR><TD ALIGN="LEFT" >- saveButton(): GameButton</TD></TR>
+<TR><TD ALIGN="LEFT" >- setUpError(message: String): List&lt;JComponent&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- setUpGameCompleted(): List&lt;JComponent&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- setUpGameOver(): List&lt;JComponent&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- setUpNextLevel(lvl: int): List&lt;JComponent&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- setUpPause(): List&lt;JComponent&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >- setUpSave(): List&lt;JComponent&gt;</TD></TR>
+<TR><TD ALIGN="LEFT" >+ visibleFocus()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GameMenuBar876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GameMenuBar</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   base: Base [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   components: List&lt;JComponent&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   menuItemWidth: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   pause: GameMenuItem [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addExitButton()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addGameButtons()</TD></TR>
+<TR><TD ALIGN="LEFT" >- addHomeButton()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ addLoadButton()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getIcon(filename: String): ImageIcon</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GameMenuItem876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GameMenuItem</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ changeActionListener(action: ActionListener)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ changeIcon(imageIcon: ImageIcon)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+GameState1918088740[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)GameState</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   actions: List&lt;Action&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   id: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   time: int [1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># addAction(action: Action)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ apply(base: Base)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ toxml(): Element</TD></TR>
+<TR><TD ALIGN="LEFT" >+ undo(base: Base)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Load1079610483[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Load</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ continueGame(file: File, condition: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getFile(file: String): File</TD></TR>
+<TR><TD ALIGN="LEFT" >- loadGame(file: File): Parser</TD></TR>
+<TR><TD ALIGN="LEFT" >- loadJar(levelNum: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ loadLevel(levelNum: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ previousGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ previousGameInfo(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ previousGamePresent(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ resumeGame()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+MenuMainPanel876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MenuMainPanel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   base: Base [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   buttonGap: Dimension [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   fullButtonSize: Dimension [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   halfButtonSize: Dimension [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- buttonPanelForMenu(): JPanel</TD></TR>
+<TR><TD ALIGN="LEFT" >- buttonsRowOne(buttons: JPanel, c: GridBagConstraints)</TD></TR>
+<TR><TD ALIGN="LEFT" >- buttonsRowThree(buttons: JPanel, c: GridBagConstraints)</TD></TR>
+<TR><TD ALIGN="LEFT" >- buttonsRowTwo(buttons: JPanel, c: GridBagConstraints)</TD></TR>
+<TR><TD ALIGN="LEFT" >- titlePanelForMenu(): JPanel</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Parser1079610483[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Parser</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   classMap: HashMap&lt;String, Class&lt;?&gt;&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   document: Document [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ entitiesPresent(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- getPoint(element: Element): Point</TD></TR>
+<TR><TD ALIGN="LEFT" >- intFromAttribute(element: Element, attributeName: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >- intFromElement(element: Element, elementName: String): int</TD></TR>
+<TR><TD ALIGN="LEFT" >- loadEnemyEntityImages(entityClass: Class&lt;?&gt;)</TD></TR>
+<TR><TD ALIGN="LEFT" >- parseEntity(entity: Element): Object</TD></TR>
+<TR><TD ALIGN="LEFT" >+ parseInventory(player: Player, inventory: Element)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ parseMapInfo()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ parsePlayer(player: Player)</TD></TR>
+<TR><TD ALIGN="LEFT" >- parseTile(element: Element): Tile</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+PhasePanel876272389[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)PhasePanel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   components: List&lt;JComponent&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   gamePanel: JPanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   sidePanel: JPanel [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ stopSound()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ updateTime(time: int)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Player1918088740[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Player</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   base: Base [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   currentAction: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gamePanel: PhasePanel [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   gameStates: List&lt;GameState&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   isPlaying: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   isRewinding: boolean [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   playPause: GameButton [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   scrubber: JSlider [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   speed: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   speedBtn: GameButton [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >- load()</TD></TR>
+<TR><TD ALIGN="LEFT" >- play()</TD></TR>
+<TR><TD ALIGN="LEFT" >- progress(i: int, isProgressing: boolean): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >- rewind()</TD></TR>
+<TR><TD ALIGN="LEFT" >- scrub(position: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >- updatePlayBtn()</TD></TR>
+<TR><TD ALIGN="LEFT" >- updateSpeed()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Recorder1918088740[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Recorder</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   gameStates: List&lt;GameState&gt; [0..*]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   level: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   prevState: GameState [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addAction(action: Action, time: int)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ save()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Save1079610483[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Save</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ addPoint(element: Element, p: Point)</TD></TR>
+<TR><TD ALIGN="LEFT" >- saveEntity(entities: Element, e: Entity)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ saveGame()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ saveInventory(player: Element)</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+Base876272389 -> GameDialog876272389[label="currentPopUp
+[0..1]"];
+Base876272389 -> GameDialog876272389[label="gameOverDialog
+[0..1]"];
+Base876272389 -> GameDialog876272389[label="gameWinDialog
+[0..1]"];
+Base876272389 -> GameDialog876272389[label="pauseDialog
+[0..1]"];
+Base876272389 -> GameDialog876272389[label="saveDialog
+[0..1]"];
+Base876272389 -> GameMenuBar876272389[label="currentMenuBar
+[0..1]"];
+Base876272389 -> PhasePanel876272389[label="currentPanel
+[0..1]"];
+Base876272389 -> Recorder1918088740[label="recorder
+[0..1]"];
+Base876272389 -> Save1079610483[label="saveGame() -> saveGame()"];
+Controller876272389 -> Base876272389[label="b
+[0..1]"];
+GameDialog876272389 -> Base876272389[label="base
+[0..1]"];
+GameMenuBar876272389 -> Base876272389[label="base
+[0..1]"];
+GameMenuBar876272389 -> GameMenuItem876272389[label="pause
+[0..1]"];
+MenuMainPanel876272389 -> Base876272389[label="base
+[0..1]"];
+Player1918088740 -> Base876272389[label="base
+[0..1]"];
+Recorder1918088740 -> GameState1918088740[label="gameStates
+[0..*]"];
+Recorder1918088740 -> GameState1918088740[label="prevState
+[0..1]"];
+    
+}
+@enduml
