@@ -9,4 +9,4 @@
 | Persistency | [Gideon Wilkins](https://github.com/Gadrean)         |
 | Fuzz        | [Gavin Lim](https://github.com/Twetny)               |
 | App         | Molly                                                |
-| Renderer    | Diana                                                |
+| Renderer    | [Diana Batoon](https://github.com/dbatoon)           |
